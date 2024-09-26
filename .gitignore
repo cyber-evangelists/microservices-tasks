@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environment variables
+.env
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# FastAPI/Uvicorn logs
+*.log
+*.sqlite3
+
+# gRPC generated files (optional, depending on your workflow)
+proto/*.pyc
+proto/*.py
+
+# Docker-related files
+docker-compose.yml
+*.env
+*.pid
+*.log
+
+# macOS system files
+.DS_Store
+
+# pyright, mypy, pylance config files
+.mypy_cache/
+.pyright/
+
+# pytest cache
+.pytest_cache/
+.tox/
+coverage.xml
+coverage/
+
+# gRPC generated files (optional, depending on your preference)
+gen/
+*.pb.go
+*.pb.cc
+*.pb.h
+
+# IDE specific files (optional)
+.vscode/
+.idea/
+
+# Miscellaneous
+*.bak
+*.swp
+
+# Ignore pip wheel files
+*.whl
+
+# Ignore pyenv
+.python-version
+
+# Ignore Jupyter Notebook checkpoints (if applicable)
+.ipynb_checkpoints/
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package digtool;
+
+// The DigToolService provides DNS query functionality.
+service DigToolService {
+  // Performs a DNS query
+  rpc QueryDNS (DNSRequest) returns (DNSResponse) {}
+}
+
+// The request message containing parameters for the dig command.
+message DNSRequest {
+  string hostname = 1;        // Domain or hostname to query.
+  string flags = 2;           // Command Flags
+}
+
+// The response message containing the results of the DNS query.
+message DNSResponse {
+  repeated string results = 1;  // The DNS query results.
+  string error = 2;             // Error message if something goes wrong.
+}
